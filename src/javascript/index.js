@@ -1,8 +1,8 @@
-import talk from "./utility/textToSpeech";
-import listen from "./utility/speechRecognition";
+//import talk from "./utility/textToSpeech";
+//import listen from "./utility/speechRecognition";
+const listen = require('./utility/speechRecognition');
 
 function test() {
-  talk("Powiedz cos do mikrofonu pało!").onend = listen;
+  listen();
 }
 
-document.querySelector("#btn").addEventListener("click", test);
